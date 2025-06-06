@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.model.Message;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.web.bind.annotation.*;
@@ -16,11 +17,5 @@ public class HelloController {
     @PostMapping("/echo")
     public Message echo(@RequestBody Message input) {
         return input;
-    }
-
-    @Data
-    @AllArgsConstructor
-    static class Message {
-        public String text;
     }
 }
