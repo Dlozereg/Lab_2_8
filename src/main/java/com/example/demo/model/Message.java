@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor     // создаёт конструктор с аргументами для всех полей
 @NoArgsConstructor      // создаёт конструктор без аргументов (обязателен для @RequestBody)
 public class Message {
-    public String text;
+    private String text;
 }
